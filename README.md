@@ -54,3 +54,33 @@ for(int i=0;i<v.size();i++){
 }
 }
 ```
+### reversepartofarray
+```c++
+//void reversePart(int i,int j,vector<int>& v){
+    void reverse (vector<int>& v){
+        int i=0;
+        int j=v.size()-1;
+    
+    while(i<=j){
+int temp=v[i];
+v[i]=v[j];
+v[j]=temp;
+i++;
+j--;
+    }
+    return ;}
+
+int main(){
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(6);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(7);
+    display(v);
+
+    //reversePart(2,3,v);
+    reverse(v);
+    display(v);
+}
+```
